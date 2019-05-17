@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".HouseSpec">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/dream_h_s"
+        android:id="@+id/dream_head"
+        android:layout_margin="15dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_two"
+        android:id="@+id/icon_two"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dream_head"
+        />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frame_layout_1"
+        android:layout_below="@+id/icon_two">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/field"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="26dp"
+            android:layout_height="wrap_content"
+            android:hint="Length (sq ft)"
+            android:textColor="@android:color/black"
+            android:background="@null"
+            android:textColorHint="@android:color/darker_gray"/>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frame_layout_2"
+        android:layout_below="@+id/frame_layout_1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/field"
+            />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="26dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@android:color/black"
+            android:hint="Width (sq ft)"
+            android:textColorHint="@android:color/darker_gray"/>
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/icon1"
+        android:layout_below="@+id/frame_layout_2"
+        android:src="@mipmap/icon_1"
+        />
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/icon1"
+         android:src="@mipmap/select"
+         android:layout_centerHorizontal="true"
+         />
+
+
+</RelativeLayout>
